@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="quiz-container">
+    <section class="quiz-card animate-card" id="quiz-card">
+      <header class="quiz-header">
+        <div>
+          <p class="quiz-title">Quiz Game</p>
+          <p class="quiz-subtitle">Test your knowledge with fun questions</p>
+        </div>
+        <div class="progress-label" id="progress-label">Question 1 / 5</div>
+      </header>
+
+      <div class="question-panel">
+        <h2 class="question-text" id="question-text">Loading question...</h2>
+      </div>
+
+      <div class="options-grid" id="options-grid">
+        <!-- Options inserted by JavaScript -->
+      </div>
+
+      <div class="feedback-row" id="feedback-row" aria-live="polite"></div>
+
+      <div class="actions-row">
+        <button class="btn btn-submit" id="submit-btn" disabled>Submit Answer</button>
+        <button class="btn btn-restart" id="restart-btn">Restart Quiz</button>
+      </div>
+    </section>
+
+    <section class="result-card hidden" id="result-card">
+      <div class="result-content">
+        <h2>Quiz Complete!</h2>
+        <p class="result-score" id="result-score">You scored 0 / 5</p>
+        <p class="result-message" id="result-message">Nice work. Try again to improve your score.</p>
+        <button class="btn btn-primary" id="retry-btn">Play Again</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
